@@ -32,7 +32,7 @@ function loadExtensionScript(callback) {
         var script = document.createElement("script");
         script.textContent = "(" + callback.toString() + ")();";
         document.body.appendChild(script);
-    }, false);
+    }, false);    
     head.appendChild(script);
 }
 
